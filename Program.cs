@@ -33,6 +33,8 @@ app.UseSwaggerUI();
 // }
 
 app.UseCors("PermitirTodo"); // Activar CORS
+app.UseDefaultFiles(); // 1. Busca automáticamente index.html
+app.UseStaticFiles();  // 2. Permite enviar archivos (html, css, js)
 
 app.UseAuthorization();
 
